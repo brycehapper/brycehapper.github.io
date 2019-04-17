@@ -1,0 +1,111 @@
+<!doctype html><! --talentselect.html -->
+<html>
+<head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>연예인</title>
+<script language="javascript"> 
+function showSub(obj) {
+    f = document.forms.select_machine;
+if(obj == 1) {
+     f.SUB1.style.display = "";
+     f.SUB2.style.display = "none";
+     f.SUB3.style.display = "none";
+     f.SUB4.style.display = "none";
+     f.SUB5.style.display = "none";
+    } 
+else if(obj == 2) {
+     f.SUB1.style.display = "none";
+     f.SUB2.style.display = "";
+     f.SUB3.style.display = "none";
+     f.SUB4.style.display = "none";
+     f.SUB5.style.display = "none";
+     }
+else if(obj == 3) {
+     f.SUB1.style.display = "none";
+     f.SUB2.style.display = "none";
+     f.SUB3.style.display = "";
+     f.SUB4.style.display = "none";
+     f.SUB5.style.display = "none";
+     }
+else if(obj == 4) {
+     f.SUB1.style.display = "none";
+     f.SUB2.style.display = "none";
+     f.SUB3.style.display = "none";
+     f.SUB4.style.display = "";
+     f.SUB5.style.display = "none";
+     }
+ else if(obj == 5) {
+     f.SUB1.style.display = "none";
+     f.SUB2.style.display = "none";
+     f.SUB3.style.display = "none";
+     f.SUB4.style.display = "none";
+     f.SUB5.style.display = "";
+     }
+}
+</script>
+</head>
+<body>
+<section>
+<fieldset>
+<legend>연예인</legend>
+<form name="select_machine">
+<select name=" " onchange="showSub(this.options[this.selectedIndex].value);"> 
+<option value="1">직종선택</option> 
+<option value="2">배우</option> 
+<option value="3">가수</option>
+<option value="4">코미디언</option>
+<option value="5">유튜버</option>
+</select>
+<br>
+<select name="SUB1" style="">
+<option value=" ">연예인 이름</option>
+</select>
+<select name="SUB2" style="display: none;">
+ <option value="">이정재</option> 
+ <option value=" ">장동건</option>
+ <option value=" ">현빈</option>
+ <option value=" ">박보검</option>
+ <option value=" ">조보아</option>
+ <option value=" ">손예진</option>
+ <option value=" ">김혜수</option>
+ <option value=" ">황정민</option>
+ <option value=" ">박성웅</option></select>
+<select name="SUB3" style="display: none;">
+ <option value=" ">바이브</option>
+ <option value=" ">불빨간 사춘기</option>
+ <option value=" ">잔나비</option>
+ <option value=" ">박효신</option>
+ <option value=" ">버즈</option>
+ <option value=" ">방탄소년단</option>
+ <option value=" ">빈지노</option>
+ <option value=" ">엠씨더맥스</option>
+ <option value=" ">태연</option>
+ <option value=" ">윤하</option>
+</select>
+<select name="SUB4" style="display: none;">
+ <option value=" ">유재석</option>
+ <option value=" ">양세형</option>
+ <option value=" ">박나래</option>
+ <option value=" ">강호동</option>
+ <option value=" ">이수근</option>
+ <option value=" ">신동엽</option>
+ <option value=" ">장도연</option>
+ <option value=" ">이경규</option>
+ <option value=" ">김영철</option>
+</select>
+<select name="SUB5" style="display: none;">
+ <option value=" ">보겸</option>
+ <option value=" ">슈기 </option>
+ <option value=" ">벤쯔</option>
+ <option value=" ">봉준이</option>
+ <option value=" ">남순이</option>
+ <option value=" ">세야</option>
+ <option value=" ">더블비</option>
+ <option value=" ">기훈이</option>
+ <option value=" ">엣지</option>
+</select>
+<input type="reset" value="취소">
+</form></fieldset>
+</section>
+</body>
+</html>
